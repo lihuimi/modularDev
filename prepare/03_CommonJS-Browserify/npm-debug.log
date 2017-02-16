@@ -1,0 +1,79 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\xfzhang\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'browserify',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.10.6
+3 info using node@v4.4.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData browserify
+8 silly fetchNamedPackageData browserify
+9 silly mapToRegistry name browserify
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://localhost:4873/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'browserify',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'browserify',
+12 silly mapToRegistry   name: 'browserify',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://localhost:4873/browserify
+14 verbose request uri http://localhost:4873/browserify
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 14:42:20
+17 verbose request using bearer token for auth
+18 verbose request id 621729e5e5bdcddc
+19 http request GET http://localhost:4873/browserify
+20 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:4873
+21 info attempt registry request try #2 at 14:42:31
+22 verbose request using bearer token for auth
+23 http request GET http://localhost:4873/browserify
+24 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:4873
+25 info attempt registry request try #3 at 14:43:32
+26 verbose request using bearer token for auth
+27 http request GET http://localhost:4873/browserify
+28 silly fetchPackageMetaData Error: connect ECONNREFUSED 127.0.0.1:4873
+28 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:870:11)
+28 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:893:20)
+28 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1061:14)
+28 silly fetchPackageMetaData  error for browserify { [Error: connect ECONNREFUSED 127.0.0.1:4873]
+28 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+28 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+28 silly fetchPackageMetaData   syscall: 'connect',
+28 silly fetchPackageMetaData   address: '127.0.0.1',
+28 silly fetchPackageMetaData   port: 4873 }
+29 silly rollbackFailedOptional Starting
+30 silly rollbackFailedOptional Finishing
+31 silly runTopLevelLifecycles Starting
+32 silly runTopLevelLifecycles Finishing
+33 silly install printInstalled
+34 verbose stack Error: connect ECONNREFUSED 127.0.0.1:4873
+34 verbose stack     at Object.exports._errnoException (util.js:870:11)
+34 verbose stack     at exports._exceptionWithHostPort (util.js:893:20)
+34 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1061:14)
+35 verbose cwd C:\work\H5\160728\workspace\ModularTest\work\03_CommonJS-Browserify
+36 error Windows_NT 10.0.14393
+37 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\xfzhang\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "install" "browserify" "--save-dev"
+38 error node v4.4.3
+39 error npm  v3.10.6
+40 error code ECONNREFUSED
+41 error errno ECONNREFUSED
+42 error syscall connect
+43 error Error: connect ECONNREFUSED 127.0.0.1:4873
+43 error     at Object.exports._errnoException (util.js:870:11)
+43 error     at exports._exceptionWithHostPort (util.js:893:20)
+43 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1061:14)
+43 error  { [Error: connect ECONNREFUSED 127.0.0.1:4873]
+43 error   code: 'ECONNREFUSED',
+43 error   errno: 'ECONNREFUSED',
+43 error   syscall: 'connect',
+43 error   address: '127.0.0.1',
+43 error   port: 4873 }
+44 error If you are behind a proxy, please make sure that the
+44 error 'proxy' config is set properly.  See: 'npm help config'
+45 verbose exit [ 1, true ]

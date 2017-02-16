@@ -1,0 +1,13 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Modular Demo 2</title>
+</head>
+<body>
+<form action="" name="myForm">
+  <input type="text" name="name" ng-model="name" ng-required="true">
+  <div ng-show="myForm.name.$dirty&&myForm.name.$invalid">必填</div>
+</form>
+<script data-main="./js/app" src="./js/libs/require.js"></script>
+</body>
+</html>

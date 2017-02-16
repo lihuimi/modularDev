@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Modular Demo 2</title>
+</head>
+<body>
+    <div>
+        <h1>Modular Demo 2: 使用RequireJS</h1>
+
+        <form name="myForm">
+            用户名: <input type="text" name="username" ng-model="name" ng-required="true">
+            <div style="color: red;" ng-show="myForm.username.$dirty&&myForm.username.$invalid">
+                用户名必须指定
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/libs/require.js" data-main="js/main.js"></script>
+ </body>
+</html>
